@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="6x0-xO-Koq" customClass="TR_PersonCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6x0-xO-Koq" id="aXd-wD-PTy">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="54.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名字" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35h-Su-0SQ">
+                        <rect key="frame" x="15" y="19" width="115" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="cB9-Ng-1Ew"/>
+                            <constraint firstAttribute="width" constant="115" id="yq8-L8-IFb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_right_raw" translatesAutoresizingMaskIntoConstraints="NO" id="yUb-YS-NvV">
+                        <rect key="frame" x="284" y="13.5" width="28" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="28" id="I7Z-86-uqm"/>
+                            <constraint firstAttribute="height" constant="28" id="hTy-0M-3WE"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="船长" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sh8-vM-ja3">
+                        <rect key="frame" x="225" y="17" width="60" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="9Bk-OS-ibu"/>
+                            <constraint firstAttribute="width" constant="60" id="qCp-Ww-ubb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.5607843137254902" green="0.5607843137254902" blue="0.5607843137254902" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="35h-Su-0SQ" firstAttribute="centerY" secondItem="aXd-wD-PTy" secondAttribute="centerY" id="8hm-L2-Q3G"/>
+                    <constraint firstItem="yUb-YS-NvV" firstAttribute="centerY" secondItem="Sh8-vM-ja3" secondAttribute="centerY" id="LXM-r0-2T2"/>
+                    <constraint firstItem="35h-Su-0SQ" firstAttribute="leading" secondItem="aXd-wD-PTy" secondAttribute="leading" constant="15" id="S6q-NM-KvA"/>
+                    <constraint firstAttribute="trailing" secondItem="Sh8-vM-ja3" secondAttribute="trailing" constant="35" id="XkZ-ND-uj5"/>
+                    <constraint firstItem="yUb-YS-NvV" firstAttribute="centerY" secondItem="aXd-wD-PTy" secondAttribute="centerY" id="hfK-wh-9hC"/>
+                    <constraint firstAttribute="trailing" secondItem="yUb-YS-NvV" secondAttribute="trailing" constant="8" id="iHe-Wf-CRb"/>
+                </constraints>
+            </tableViewCellContentView>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="mine_right_raw" width="28" height="28"/>
+    </resources>
+</document>

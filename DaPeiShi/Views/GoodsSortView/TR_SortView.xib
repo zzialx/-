@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TR_SortView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="260"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nUe-ca-s7x">
+                    <rect key="frame" x="38" y="0.0" width="299" height="188"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="188" id="fJF-27-Cng"/>
+                    </constraints>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fw-qh-ves">
+                    <rect key="frame" x="38" y="213" width="136" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="136" id="EpC-C5-gcv"/>
+                        <constraint firstAttribute="height" constant="40" id="wdS-zz-gwF"/>
+                    </constraints>
+                    <state key="normal" title="重置">
+                        <color key="titleColor" red="0.92081129549999996" green="0.27195331449999999" blue="0.2313147187" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <connections>
+                        <action selector="resetBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Fkn-ji-IQe"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CAc-Sr-fod">
+                    <rect key="frame" x="197" y="213" width="136" height="40"/>
+                    <color key="backgroundColor" red="0.92081129549999996" green="0.27195331449999999" blue="0.2313147187" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="136" id="01C-bT-8v0"/>
+                        <constraint firstAttribute="height" constant="40" id="0iU-52-aWE"/>
+                    </constraints>
+                    <state key="normal" title="确定">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="confirmAction:" destination="iN0-l3-epB" eventType="touchDragOutside" id="ZaM-Ui-PrD"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="nUe-ca-s7x" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="38" id="AeN-iP-KJd"/>
+                <constraint firstAttribute="trailing" secondItem="nUe-ca-s7x" secondAttribute="trailing" constant="38" id="QG7-jH-ExE"/>
+                <constraint firstAttribute="trailing" secondItem="CAc-Sr-fod" secondAttribute="trailing" constant="42" id="Rba-Jc-i5I"/>
+                <constraint firstItem="1fw-qh-ves" firstAttribute="top" secondItem="nUe-ca-s7x" secondAttribute="bottom" constant="25" id="apO-sH-usd"/>
+                <constraint firstItem="CAc-Sr-fod" firstAttribute="top" secondItem="nUe-ca-s7x" secondAttribute="bottom" constant="25" id="lii-r4-jQM"/>
+                <constraint firstItem="nUe-ca-s7x" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="m9u-VU-hIc"/>
+                <constraint firstItem="1fw-qh-ves" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="38" id="veO-l3-o0D"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="confirmBtn" destination="CAc-Sr-fod" id="xbU-4U-dPD"/>
+                <outlet property="resetBtn" destination="1fw-qh-ves" id="dbR-jk-zBo"/>
+                <outlet property="selectConditionTable" destination="nUe-ca-s7x" id="sEi-Qe-uhr"/>
+            </connections>
+            <point key="canvasLocation" x="-1276" y="40.929535232383813"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="TR_LikeTeacherCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="62.5"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="62"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="head" translatesAutoresizingMaskIntoConstraints="NO" id="DPZ-B1-CrB">
+                        <rect key="frame" x="16" y="12" width="38" height="38"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="38" id="czx-Fh-XI2"/>
+                            <constraint firstAttribute="width" constant="38" id="pe5-M2-5yx"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="富贵老师" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBM-8F-Piq">
+                        <rect key="frame" x="62" y="20.5" width="115" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="115" id="P30-Ca-ECn"/>
+                            <constraint firstAttribute="height" constant="21" id="iHM-Jt-Nwq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lKb-h3-jKj">
+                        <rect key="frame" x="243" y="17" width="69" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="29" id="8uM-pE-oZj"/>
+                            <constraint firstAttribute="height" constant="29" id="OjL-T3-FGa"/>
+                            <constraint firstAttribute="width" constant="69" id="awv-aL-oEH"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="69" id="xfx-08-GLS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <inset key="titleEdgeInsets" minX="7" minY="5" maxX="0.0" maxY="5"/>
+                        <state key="normal" title="关注" image="add_fouce">
+                            <color key="titleColor" red="1" green="0.18039215689999999" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hBM-8F-Piq" firstAttribute="leading" secondItem="DPZ-B1-CrB" secondAttribute="trailing" constant="8" id="Iyn-xT-smp"/>
+                    <constraint firstItem="DPZ-B1-CrB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="eZn-Wd-mI8"/>
+                    <constraint firstItem="DPZ-B1-CrB" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="f4s-pZ-4em"/>
+                    <constraint firstItem="hBM-8F-Piq" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="iwS-TA-mTm"/>
+                    <constraint firstAttribute="trailing" secondItem="lKb-h3-jKj" secondAttribute="trailing" constant="8" id="z9G-fc-TYF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="lKb-h3-jKj" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" id="cSz-bm-bf7"/>
+            </constraints>
+            <connections>
+                <outlet property="headImg" destination="DPZ-B1-CrB" id="zu8-q3-a89"/>
+                <outlet property="nameLab" destination="hBM-8F-Piq" id="BE8-p0-Pfb"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="138.98050974512745"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="add_fouce" width="10" height="10"/>
+        <image name="head" width="43.200000762939453" height="27.360000610351562"/>
+    </resources>
+</document>

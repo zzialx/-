@@ -1,0 +1,93 @@
+//
+//  TR_FindNewDressVC.m
+//  DaPeiShi
+//
+//  Created by admin on 2019/7/24.
+//  Copyright © 2019 candy.chen. All rights reserved.
+//
+
+#import "TR_FindNewDressVC.h"
+#import "TR_DressShowCell.h"
+#import "TR_DressDetialVC.h"
+
+
+@interface TR_FindNewDressVC ()<UICollectionViewDelegate,UICollectionViewDataSource>
+@property (nonatomic,strong)UICollectionView * collectionView;
+@property (nonatomic,strong)UIView * searchView;
+
+@end
+
+@implementation TR_FindNewDressVC
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    if (@available(iOS 11.0, *)) {
+        self.collectionView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    }else {
+        self.automaticallyAdjustsScrollViewInsets = NO;
+    }
+     [self collectionView];
+}
+#pragma mark - UICollectionViewDelegate, UICollectionViewDataSource
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    NSInteger count = 5;
+    return count;
+}
+
+/** cell的内容*/
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    TR_DressShowCell * dressCell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
+    [dressCell showCellModel:NO];
+    return dressCell;
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
+    CGSize size = CGSizeZero;
+    size = CGSizeMake(KScreenWidth, 470);
+    return size;
+}
+//- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section{
+//    return CGSizeMake(KScreenWidth -24, 50);
+//}
+//-(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section{
+//    CGSize size = CGSizeMake(KScreenWidth-24, section==4?50:0);
+//    return size;
+//}
+
+- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
+    return UIEdgeInsetsMake(5, 12, 5, 12);
+}
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    TR_DressDetialVC * vc  = [[TR_DressDetialVC alloc]init];
+    [self.navigationController pushViewController:vc animated:YES hideBottomTabBar:YES];
+}
+#pragma mark UICOLLECTVIEW
+- (UICollectionView *)collectionView
+{
+    if (_collectionView == nil) {
+        UICollectionViewFlowLayout * layout = [[UICollectionViewFlowLayout alloc]init];
+        layout.minimumLineSpacing=3;
+        layout.minimumInteritemSpacing=3;
+        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
+        [self.view addSubview:_collectionView];
+        _collectionView.sd_layout.leftSpaceToView(self.view, 0).rightSpaceToView(self.view, 0).topSpaceToView(self.view, 0).bottomSpaceToView(self.view, 0);
+        [_collectionView registerNib:[UINib nibWithNibName:@"TR_DressShowCell" bundle:nil] forCellWithReuseIdentifier:@"cell"];
+        _collectionView.backgroundColor = UICOLOR_RGBA(255,255,255);
+        _collectionView.dataSource = self;
+        _collectionView.delegate = self;
+    }
+    return _collectionView;
+}
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
+
+@end

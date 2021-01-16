@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="TR_OrderBottomCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="41"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="40.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qtT-gT-9HS">
+                        <rect key="frame" x="12" y="0.0" width="296" height="1"/>
+                        <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="ivb-9j-BIC"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ujs-00-QR1">
+                        <rect key="frame" x="234" y="7" width="74" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="27" id="gOR-xk-9XU"/>
+                            <constraint firstAttribute="width" constant="74" id="oBn-rN-Dau"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="立即支付">
+                            <color key="titleColor" red="1" green="0.18039215689999999" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="qtT-gT-9HS" secondAttribute="trailing" constant="12" id="8v5-gT-1CD"/>
+                    <constraint firstItem="Ujs-00-QR1" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="F6e-IE-eFY"/>
+                    <constraint firstAttribute="trailing" secondItem="Ujs-00-QR1" secondAttribute="trailing" constant="12" id="JhY-Jf-5YQ"/>
+                    <constraint firstItem="qtT-gT-9HS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="UUN-M5-veQ"/>
+                    <constraint firstItem="qtT-gT-9HS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="gwa-ag-nm6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="payStateBtn" destination="Ujs-00-QR1" id="MhH-8K-TlS"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="142.1289355322339"/>
+        </tableViewCell>
+    </objects>
+</document>

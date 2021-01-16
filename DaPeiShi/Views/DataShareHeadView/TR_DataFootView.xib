@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TR_DataFootView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TOl-Fu-UD0">
+                    <rect key="frame" x="0.0" y="0.0" width="187.5" height="66"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="66" id="qg2-jn-PO5"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uvU-Lc-IZr">
+                    <rect key="frame" x="187.5" y="0.0" width="187.5" height="66"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="66" id="jjO-jK-l2H"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" tag="999" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N8h-TP-DId">
+                    <rect key="frame" x="11" y="10.5" width="166" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Gey-mt-ztK"/>
+                        <constraint firstAttribute="width" constant="166" id="z3s-JX-hxJ"/>
+                    </constraints>
+                    <state key="normal" title="共享本人数据">
+                        <color key="titleColor" red="1" green="0.18039215689999999" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="1" green="0.18039215689999999" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="shareMineDataAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="kgh-aG-Acl"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1000" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r4B-21-765">
+                    <rect key="frame" x="198.5" y="10.5" width="166" height="44"/>
+                    <color key="backgroundColor" red="1" green="0.18039215689999999" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="82B-Mz-lUk"/>
+                        <constraint firstAttribute="width" constant="166" id="ebT-8q-90S"/>
+                    </constraints>
+                    <state key="normal" title="创建身材数据">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="creatShareDataAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="GBv-DV-F0n"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="uvU-Lc-IZr" secondAttribute="trailing" id="61B-nu-xY0"/>
+                <constraint firstItem="N8h-TP-DId" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="XRp-Ye-rFO"/>
+                <constraint firstItem="N8h-TP-DId" firstAttribute="centerX" secondItem="TOl-Fu-UD0" secondAttribute="centerX" id="XSV-Xa-UxC"/>
+                <constraint firstItem="r4B-21-765" firstAttribute="centerX" secondItem="uvU-Lc-IZr" secondAttribute="centerX" id="cne-wC-1yI"/>
+                <constraint firstItem="r4B-21-765" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="dOD-5q-NmC"/>
+                <constraint firstItem="TOl-Fu-UD0" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.5" id="hLv-aV-uEh"/>
+                <constraint firstItem="uvU-Lc-IZr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hNZ-7U-yuq"/>
+                <constraint firstItem="uvU-Lc-IZr" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.5" id="nEA-c6-vL9"/>
+                <constraint firstItem="TOl-Fu-UD0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="tkx-Mo-r0P"/>
+                <constraint firstItem="TOl-Fu-UD0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="zjq-2l-C0b"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="mineShareBtn" destination="N8h-TP-DId" id="Cll-PP-5Bi"/>
+            </connections>
+            <point key="canvasLocation" x="-1038" y="-79"/>
+        </view>
+    </objects>
+</document>

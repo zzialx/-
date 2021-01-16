@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="125" id="QrQ-gM-MDV" customClass="FloatRankCell">
+            <rect key="frame" x="0.0" y="0.0" width="346" height="125"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QrQ-gM-MDV" id="rfc-IC-oYL">
+                <rect key="frame" x="0.0" y="0.0" width="346" height="124.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic" translatesAutoresizingMaskIntoConstraints="NO" id="dL0-Lz-nCK">
+                        <rect key="frame" x="16" y="11" width="38" height="38"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="38" id="Mrc-Dr-xaQ"/>
+                            <constraint firstAttribute="height" constant="38" id="pIp-jq-CH2"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="马富贵" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ntg-gI-9Sf">
+                        <rect key="frame" x="62" y="11" width="70" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="6V2-Cu-X0e"/>
+                            <constraint firstAttribute="height" constant="20" id="XaU-6U-Ogg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6分钟前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WI2-8p-3d9">
+                        <rect key="frame" x="62" y="33" width="184" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="184" id="9iB-sb-Gt2"/>
+                            <constraint firstAttribute="height" constant="20" id="mOT-Pv-rCO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="马富贵牛皮，想马富贵学习更好的爆宝藏，马富贵牛皮，楼梯口加班走起" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFk-Lf-nMy">
+                        <rect key="frame" x="62" y="61" width="268" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="oHl-Jh-Feq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gFk-Lf-nMy" firstAttribute="leading" secondItem="WI2-8p-3d9" secondAttribute="leading" id="EHp-by-aq6"/>
+                    <constraint firstItem="dL0-Lz-nCK" firstAttribute="top" secondItem="rfc-IC-oYL" secondAttribute="top" constant="11" id="RSX-25-zlb"/>
+                    <constraint firstItem="gFk-Lf-nMy" firstAttribute="top" secondItem="WI2-8p-3d9" secondAttribute="bottom" constant="8" id="Svi-zP-Vlw"/>
+                    <constraint firstItem="WI2-8p-3d9" firstAttribute="leading" secondItem="dL0-Lz-nCK" secondAttribute="trailing" constant="8" id="YgQ-6t-oT7"/>
+                    <constraint firstAttribute="trailing" secondItem="gFk-Lf-nMy" secondAttribute="trailing" constant="16" id="e59-xi-wL5"/>
+                    <constraint firstItem="WI2-8p-3d9" firstAttribute="top" secondItem="ntg-gI-9Sf" secondAttribute="bottom" constant="2" id="ilj-Ji-2pu"/>
+                    <constraint firstItem="ntg-gI-9Sf" firstAttribute="leading" secondItem="dL0-Lz-nCK" secondAttribute="trailing" constant="8" id="l79-Lb-oQa"/>
+                    <constraint firstItem="ntg-gI-9Sf" firstAttribute="top" secondItem="rfc-IC-oYL" secondAttribute="top" constant="11" id="mAT-7z-SRE"/>
+                    <constraint firstItem="dL0-Lz-nCK" firstAttribute="leading" secondItem="rfc-IC-oYL" secondAttribute="leading" constant="16" id="p8V-xI-iC6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-203.19999999999999" y="-16.641679160419791"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="pic" width="650" height="466"/>
+    </resources>
+</document>

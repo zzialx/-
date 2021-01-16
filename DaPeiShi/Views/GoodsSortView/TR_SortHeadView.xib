@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TR_SortHeadView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="41"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="1003" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M3o-X5-Urc">
+                    <rect key="frame" x="196" y="10" width="55" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="gKT-us-37Z"/>
+                        <constraint firstAttribute="width" constant="55" id="zO1-Q5-smV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="titleEdgeInsets" minX="-12" minY="0.0" maxX="5" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="43" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="风格" image="select">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="sortingAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="eQZ-5v-A3z"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4B-nc-L5O">
+                    <rect key="frame" x="30" y="10" width="30" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="SGS-Uw-n24"/>
+                        <constraint firstAttribute="width" constant="30" id="r2I-FL-FXU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="默认">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="sortingAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="kOi-mS-9Vp"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AyU-cD-awG">
+                    <rect key="frame" x="99" y="10" width="67" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="67" id="LF3-or-Wmj"/>
+                        <constraint firstAttribute="height" constant="21" id="rUF-Tx-lCd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="titleEdgeInsets" minX="-12" minY="0.0" maxX="5" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="57" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="粉丝数" image="select">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="sortingAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="wTV-rH-UJe"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QhW-4w-wvQ">
+                    <rect key="frame" x="285" y="10" width="55" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="MoK-Vf-XSe"/>
+                        <constraint firstAttribute="width" constant="55" id="d5A-0o-yhs"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="titleEdgeInsets" minX="-12" minY="0.0" maxX="5" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="43" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="等级" image="select">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="sortingAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="dvr-La-iPx"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="M3o-X5-Urc" firstAttribute="leading" secondItem="AyU-cD-awG" secondAttribute="trailing" constant="30" id="Bmf-QR-SU5"/>
+                <constraint firstItem="QhW-4w-wvQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="JoV-Tv-XK8"/>
+                <constraint firstItem="M3o-X5-Urc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="JuT-v3-wbY"/>
+                <constraint firstItem="x4B-nc-L5O" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="JvC-az-2u8"/>
+                <constraint firstItem="AyU-cD-awG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="Lgb-ge-bB8"/>
+                <constraint firstItem="x4B-nc-L5O" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="WLG-90-6Dx"/>
+                <constraint firstItem="QhW-4w-wvQ" firstAttribute="leading" secondItem="M3o-X5-Urc" secondAttribute="trailing" constant="34" id="h0r-Rx-BSF"/>
+                <constraint firstItem="AyU-cD-awG" firstAttribute="leading" secondItem="x4B-nc-L5O" secondAttribute="trailing" constant="39" id="rZA-OS-ctu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="defaultBtn" destination="x4B-nc-L5O" id="aJh-98-Kuq"/>
+                <outlet property="fansBtn" destination="AyU-cD-awG" id="kMD-aR-WNn"/>
+                <outlet property="leavlBtn" destination="QhW-4w-wvQ" id="IPD-QT-IaZ"/>
+                <outlet property="styleBtn" destination="M3o-X5-Urc" id="CTh-1s-Lqx"/>
+                <outletCollection property="sortBtnLeftDisArray" destination="rZA-OS-ctu" id="Tgk-zs-1QX"/>
+                <outletCollection property="sortBtnLeftDisArray" destination="Bmf-QR-SU5" id="VbY-qR-Z25"/>
+                <outletCollection property="sortBtnLeftDisArray" destination="h0r-Rx-BSF" id="BYw-8C-lMD"/>
+            </connections>
+            <point key="canvasLocation" x="14" y="25"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="select" width="10" height="7"/>
+    </resources>
+</document>

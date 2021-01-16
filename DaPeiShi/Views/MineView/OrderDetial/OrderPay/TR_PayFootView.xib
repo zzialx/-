@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TR_PayFootView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bl-Y7-1tn">
+                    <rect key="frame" x="15" y="11" width="345" height="43"/>
+                    <color key="backgroundColor" red="1" green="0.18039215689999999" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <state key="normal" title="立即支付">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="payAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Cvg-40-sh7"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4bl-Y7-1tn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="4Rm-uj-IEs"/>
+                <constraint firstAttribute="trailing" secondItem="4bl-Y7-1tn" secondAttribute="trailing" constant="15" id="Iux-D5-ZaM"/>
+                <constraint firstAttribute="bottom" secondItem="4bl-Y7-1tn" secondAttribute="bottom" constant="11" id="Thl-AD-hzY"/>
+                <constraint firstItem="4bl-Y7-1tn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="11" id="oKH-zS-TvQ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="payBtn" destination="4bl-Y7-1tn" id="hnW-y0-dIr"/>
+            </connections>
+            <point key="canvasLocation" x="-105" y="105"/>
+        </view>
+    </objects>
+</document>
