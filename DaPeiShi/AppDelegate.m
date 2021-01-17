@@ -31,6 +31,7 @@
     }];
     //向微信注册
     [WXApi registerApp:@"wxd930ea5d5a258f4f" enableMTA:YES];
+    //mvvm分支测试
     return YES;
 }
 
